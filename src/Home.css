@@ -50,6 +50,31 @@
 
 /************** RESPONSIVE MEDIA QUERIES *****************/
 
+
+@media (min-width: 280px) and (max-width: 320px) {
+  .Home {
+    flex-direction: column;
+  }
+
+  .Home-text {
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .Home h1 {
+    font-size: 2em;
+  }
+
+  .Home-text p{
+    font-size: .8rem;
+  }
+
+  .Home-image {
+    max-width: 80%;
+  }
+}
+
+
 @media (min-width: 320px) and (max-width: 480px) {
   .Home {
     flex-direction: column;

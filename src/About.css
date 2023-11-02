@@ -1,3 +1,5 @@
+/************** ABOUT *****************/
+
 .About img{
   max-width: 50%;
   height: auto;
@@ -16,12 +18,10 @@
 }
 
 .About-smile{
-  /* color: #b71e1e; */
   margin: 4px;
 }
 
 .About h1{
-  /* color: #b71e1e; */
   margin-right: 10px;
   font-size: 2.5em;
 }
@@ -45,6 +45,8 @@
 
 }
 
+/************** KEYFRAMES *****************/
+
 @keyframes fadeIn {
   from{
     opacity: 0;
@@ -54,7 +56,36 @@
   }
 }
 
-@media (max-width: 768px) {
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+@media (min-width: 280px) and (max-width: 320px) {
+  .About {
+    flex-direction: column;
+  }
+
+  .About-text {
+    text-align: center;
+  }
+
+  .About h1 {
+    font-size: 1.3em;
+  }
+
+  .About i {
+    font-size: 1.3em;
+  }
+
+  .About p {
+    font-size: .8em;
+  }
+
+  .About img {
+    max-width: 80%;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
   .About {
     flex-direction: column;
   }

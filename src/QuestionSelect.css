@@ -47,6 +47,20 @@
 
 /************** RESPONSIVE MEDIA QUERIES *****************/
 
+
+@media (min-width: 280px) and (max-width: 320px) {
+  .QuestionSelect-btn{
+    font-size: .6rem;
+  }
+  .QuestionSelect-text {
+    font-size: .7rem;
+  }
+
+  .QuestionSelect {
+    max-width: 95%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .QuestionSelect-btn{
     font-size: .7rem;

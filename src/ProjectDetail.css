@@ -45,6 +45,7 @@
 .ProjectDetail-header-lists {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -97,7 +98,7 @@
   text-align: justify;
   font-size: 1.2em;
   margin-top: 10%;
-  margin-right: 100px;
+  /* margin-right: 100px; */
   margin-left: 50px;
 }
 
@@ -142,7 +143,7 @@
   max-width: 80%;
   text-align: justify;
   font-size: 1.2em;
-  margin-top: 100px;
+  margin-top: 10%;
   margin-left: 50px;
 }
 
@@ -183,7 +184,53 @@
 
 /************** RESPONSIVE MEDIA QUERIES *****************/
 
-@media (min-width: 300px) and (max-width: 768px){
+
+@media (min-width: 280px) and (max-width: 320px){
+  .ProjectDetail-header p {
+    font-size: .5em;
+  }
+
+  .ProjectDetail-header-lists p {
+    font-size: .5em;
+  }
+
+  .ProjectDetail-header {
+    max-width: 80%;
+  }
+
+  .ProjectDetail-header h1 {
+    font-size: 2em;
+  }
+
+  .ProjectDetail-header p:first-of-type {
+    margin: 5px;
+  }
+
+  .ProjectDetail-purpose p{
+    font-size: .6em;
+    max-width: 100%;
+    margin-right: 10px;
+  }
+
+  .ProjectDetail-stack-detail p{
+    font-size: .6em;
+    margin-right: 10px;
+    align-self: center;
+  }
+
+
+  .ProjectDetail-bugs p {
+    font-size: .6em;
+    margin-right: 5px;
+  }
+
+  .ProjectDetail-lessons p {
+    font-size: .6em;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 768px){
   .ProjectDetail-header p {
     font-size: .2em;
   }
@@ -195,29 +242,20 @@
   .ProjectDetail-header {
     max-width: 90%;
   }
-}
 
-@media (max-width: 768px) {
-  .ProjectDetail-header {
-    max-width: 80%;
+  .ProjectDetail-header p:first-of-type {
+    margin: 10px;
   }
 
   .ProjectDetail-header h1 {
     font-size: 3em;
   }
 
-  .ProjectDetail-header p {
-    font-size: 1em;
-  }
-
-  .ProjectDetail-header p:first-of-type {
-    margin: 10px;
-  }
-
   .ProjectDetail p {
     font-size: .8rem;
   }
 }
+
 
 @media (min-width: 768px) and (max-width: 1024px){
   .ProjectDetail-header {

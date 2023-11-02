@@ -1,0 +1,92 @@
+.About img{
+  max-width: 50%;
+  height: auto;
+  margin: 30px;
+  animation: fadeIn 3s forwards;
+  border-radius: 6px;
+}
+
+.About {
+  display: flex;
+  margin: 30px;
+  margin-top: 20px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.About-smile{
+  /* color: #b71e1e; */
+  margin: 4px;
+}
+
+.About h1{
+  /* color: #b71e1e; */
+  margin-right: 10px;
+  font-size: 2.5em;
+}
+
+
+.About-greet{
+  display: flex;
+  align-items: center;
+}
+
+.About-greet:hover{
+  color: #b71e1e;
+}
+
+.About-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 3s forwards;
+
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .About {
+    flex-direction: column;
+  }
+
+  .About-text {
+    text-align: center;
+  }
+
+  .About h1 {
+    font-size: 1.6em;
+  }
+
+  .About img {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .About {
+    flex-direction: column;
+  }
+
+  .About-text {
+    text-align: center;
+  }
+
+  .About h1 {
+    font-size: 2.5em;
+  }
+
+  .About img {
+    max-width: 80%;
+  }
+}

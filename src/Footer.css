@@ -1,0 +1,16 @@
+/************** FOOTER *****************/
+
+.Footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  font-size: .8rem;
+}
+.Footer i {
+  font-size: .8em;
+}
+
+.Footer p {
+  margin: 0;
+}

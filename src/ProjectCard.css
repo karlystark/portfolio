@@ -1,0 +1,66 @@
+/************** PROJECT CARD *****************/
+
+.ProjectCard{
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  color: black;
+  border: 2px solid black;
+  max-width: 33%;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 60px;
+}
+
+.ProjectCard:hover{
+  transform: scale(1.02);
+  box-shadow: 7px 7px 0 5px #b71e1e;
+  transition: .5s ease-in-out;
+}
+
+.ProjectCard button {
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  color:  black;
+}
+
+.ProjectCard button:hover {
+    background-color: black;
+    color: #fdfcf0;
+  }
+
+.ProjectCard-img{
+  border-radius: 6px;
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.ProjectCard-info {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  text-align: center;
+  color: black;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 0.5 ease-in-out;
+}
+
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+  @media (max-width: 768px) {
+    .ProjectCard {
+      max-width: 80%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px){
+    .ProjectCard {
+      width: 90vw;
+    }
+  }

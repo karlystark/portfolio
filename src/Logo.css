@@ -1,0 +1,11 @@
+/************** LOGO *****************/
+
+i {
+  font-size: 1.8em;
+  margin: 8px;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+}

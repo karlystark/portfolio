@@ -1,0 +1,76 @@
+/************** QUESTION SELECT *****************/
+
+.QuestionSelect{
+  display: flex;
+  border-radius: 6px;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.QuestionSelect-buttons{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+}
+
+.QuestionSelect-btn{
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  color:  black;
+
+}
+
+.QuestionSelect-text{
+  max-width: 50%;
+  margin-left: 20px;
+  font-size: .8em;
+  text-align: left;
+}
+
+.QuestionSelect-default{
+  font-size: 2em;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.QuestionSelect-btn:hover{
+  background-color: black;
+  color: #fdfcf0;
+}
+
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .QuestionSelect-btn{
+    font-size: .7rem;
+  }
+  .QuestionSelect-text {
+    font-size: .6rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .QuestionSelect-btn{
+    font-size: .8rem;
+  }
+  .QuestionSelect-text {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .QuestionSelect-btn {
+    font-size: 1rem;
+  }
+
+  .QuestionSelect-text {
+    font-size: 1rem;
+  }
+}

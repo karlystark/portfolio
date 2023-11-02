@@ -1,0 +1,17 @@
+/************** NAV BAR *****************/
+
+nav {
+  display: flex;
+  margin: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #b71e1e;
+  text-decoration-line: underline;
+}
+

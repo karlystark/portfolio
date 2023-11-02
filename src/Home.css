@@ -1,0 +1,96 @@
+/************** HOME *****************/
+
+.Home {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/** Home Text **/
+
+.Home-text{
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 3s forwards;
+  margin-right: 20px;
+}
+
+.Home-text h1{
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.Home-text h1:hover{
+  color: #b71e1e;
+}
+
+.Home-text p{
+  font-size: 1.1em;
+}
+
+/** Home Image **/
+
+.Home-image{
+  max-width: 60%;
+  max-height: auto;
+  animation: fadeIn 3s forwards;
+}
+
+/************** KEYFRAMES *****************/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .Home {
+    flex-direction: column;
+  }
+
+  .Home-text {
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .Home h1 {
+    font-size: 3em;
+  }
+
+  .Home-text p{
+    font-size: .8rem;
+  }
+
+  .Home-image {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .Home {
+    flex-direction: column;
+  }
+
+  .Home-text {
+    text-align: center;
+    max-width: 65%;
+  }
+
+  .Home h1 {
+    font-size: 3.2em;
+  }
+
+  .Home-text p{
+    font-size: 1rem;
+  }
+
+  .Home-image {
+    max-width: 80%;
+  }
+}

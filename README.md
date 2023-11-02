@@ -7,6 +7,8 @@ A clean, responsive, accessible portfolio site to showcase my projects, blog, an
 
 This site was built using React. 
 
+
+Note: project demo videos are not currently included in repo due to file size - visit the live site @ http://www.karlystark.com to view.
 ## Available Scripts
 
 In the project directory, you can run:

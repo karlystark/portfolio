@@ -33,25 +33,27 @@ function App() {
       data search.`,
       "stack": ["React", "Python", "Flask", "PostgreSQL", "AWS S3"],
       "stack_explanation": [`Creating a full-stack application from the ground
-      up required us to mindfully choose which frameworks we were going to
-      use on the front and backends.`,
+      up required us to perform well-thought-out design practices and mindfully
+      choose which languages and frameworks we were going to use on the front
+      and backends.`,
         `We chose to build our backend using Python's Flask framework due to its
       quick startup time and breadth of library support for exif data
       extraction, PostgreSQL for our database, and AWS S3 to store our image
-      files (with boto3 used to send the images we received from our frontend
-      upload form to S3). To extract and process exif data, we used a
+      files (with boto3 used on the backend to send the images we received from
+      our frontend upload form to S3). To extract and process exif data, we used a
       combination of libraries - Exif, Pillow, and geoPy's geolocator
       library. Exif and geoPy worked together to translate
       longitudinal/latitudinal values from the image exif (if available)
       and locate the city and country where the image was taken. Pillow was
-      used to extract all other exif data points.`,
+      used to extract all other exif data values.`,
         `On the frontend, we built a single-page application using React and React
       router. CSS and Bootstrap worked together to create the styling for the
       UI. Inspired by my favorite image site, Unsplash, I created a three
       column layout for our images and full-screen image detail modals
       on-click. On the image upload form, I created a field for users to
-      include custom alt-text for their images, and a pop up modal that users
-      could click to learn more about how to write effective alt-text.`],
+      include custom alt-text for their images, and an expandable info-card that
+      users could click to learn more about how to write effective, meaningful
+      alt-text.`],
       "img": "pixly_home.png",
       "detail_images": [["pixly_form.png", `pix.ly's file upload form shows a
       custom alt-text field`],
@@ -59,10 +61,10 @@ function App() {
       alt-text with an example`]],
       "github": "https://github.com/karlystark/pixly-frontend",
       "demo": "pixly-demo-oct.mp4",
-      "bug_stories": [`Setting up and connecting AWS was a huge learning curve,
-      and took us the better part of our first day to work through, but once
-      we got that out of the way, the rest of our project was a series of
-      incredibly fun problems we got to solve.`,
+      "bug_stories": [`Setting up and connecting AWS for the first time was a
+      learning curve, and took us the better part of our first day to work
+      through, but once we got that out of the way, the rest of our project was
+      a series of incredibly fun problems we got to solve.`,
         `One of our best was in pulling and formatting location data from our
       images — for this, we used a combination of the exif library (to pull
       the longitude and latitude data from the image) and geoPy’s geolocator
@@ -85,12 +87,13 @@ function App() {
       in partnership with my pair programming partner, Kirra Hyde.`,
         `In these first few days of development, our goal was to build out the
       robust backend for the application, making sure that our images could be
-      efficiently stored in AWS S3 and accessed, we could extract the necessary
-      exif data from our images, including location, camera make/model data,
-      lens data, and aperture/shutter speed settings, and this data could be
-      stored in our database. Once this was complete, I was able to build out
-      a simple UI for the project in our final day of the sprint, creating a
-      component hierarchy in React and using CSS grid layout for the gallery.`,
+      efficiently stored in AWS S3 and accessed, that we could extract the
+      necessary exif data from our images, including location, camera make/model
+      data, lens data, and aperture/shutter speed settings, and that this data
+      could then be stored in our database. Once this was complete, I was able
+      to build out a simple UI for the project in our final day of the sprint,
+      creating a clear, reusable component hierarchy in React and using CSS
+      grid layout for the gallery.`,
         `After our initial sprint, I had the opportunity to continue development
       on my own, during which time I worked more extensively on accessibility
       and performance. Given the lack of meaningful metadata to use as alt-text
@@ -106,21 +109,20 @@ function App() {
       performant image loading in the gallery.`],
       "lessons": [`Getting my hands on image data and working on a media-heavy
       product allowed me to really lean on my previous career experience as a
-      filmmaker/photographer and media library worker. Much of the problem
-      solving around handling and accessing exif data was ameliorated by the
-      fact that I had a strong background in creating and handling images, and
-      also brought new considerations to my attention:`,
+      filmmaker/photographer and media digitization specialist. Much of the
+      problem solving around handling and accessing exif data was ameliorated
+      by the fact that I had a strong background in creating and handling
+      images, and also brought new considerations to my attention:`,
         `The accessibility issues in an app of this type, most acutely a lack of
       meaningful alt-text, allowed me to plumb my media accessibility workshops
-      and lesson plans to decide a concise, quick, and built-in way to empower
+      and lesson plans to decide a concise, simple, and approachable way to empower
       users to write and think mindfully about their images' alt-text.`,
         `Working with a large gallery of photos meant performance and loading
       issues, until I realized that the images needed to be compressed upon
       storage in AWS S3, and lazy loading could be utilized to decrease load
       times on scroll. When dealing with a media-heavy application, these
       issues became much more apparent to me than they have in previous
-      projects, and I was so glad to have the opportunity to explore solutions
-      for such projects.`],
+      projects, and I was so glad to have the opportunity to explore solutions.`],
     },
     {
       "id": 2,
@@ -137,8 +139,8 @@ function App() {
       "stack_explanation": [`SIS was built using Django and Django REST
       Framework, with extensive administrative infrastructure and Django
       templates for the frontend. Tools that we used throughout our time in
-      the SIS codebase were django watson for search and python matching
-      library for stable roommate pairing. All tests were written using
+      the SIS codebase were Django Watson for full-text search and python matching
+      library for stable roommate pairings. All tests were written using
       unittest.`],
       "img": "sis_home.png",
       "detail_images": [["sis_tagsearch.png", `search results for
@@ -148,10 +150,10 @@ function App() {
       "github": "",
       "demo": "sis_tagsearch.mp4",
       "bug_stories": [`Building a tagging feature from scratch in an abstracted
-      system such as Django yielded so many interesting bugs and epiphanies.
-      As we were experiencing the quirks of Django for the first time, and had
+      system such as Django yielded so many interesting bugs and epiphanies. As
+      we were experiencing the quirks of Django for the first time, and had
       our hands in many apps and parts of the codebase to implement this
-      site-wide feature. As we discovered, building a tag-feature was going to
+      site-wide feature, we discovered that building a tag-feature was going to
       require much flexibility and resilience.`,
         `Once we made the decision to strike out on our own without using a
       tagging library, we began building out our models and writing unit tests
@@ -161,53 +163,52 @@ function App() {
       five different resources with a tag (but never more than one at a time!).
       Generic foreign key seemed like a good choice at first, but then we
       discovered that querying would get very complicated using this method.
-      After some feedback, we went with a table that used ManyToMany
+      After some feedback, we went with a table that used Many-To-Many
       relationships to connect foreign key curriculum items to the table,
       along with some very fun unique constraints and clean methods to make
       sure that each curriculum item couldn’t have duplicate tags, and no
       tag instance could have multiple curriculum items attached (ex. “React”
       couldn’t show up twice on a given lecture, and a single row/tag
-      instance in our table couldn’t have both a lecture and assessment
-      attached to it).`,
-        `When we began to implement a tags field in our admin forms for our
-      curriculum items, so that admins could assign tags to their items and
+      instance in our table couldn’t have both a lecture resource and assessment
+      resource attached to it).`,
+        `When we began to implement a "tags" field in the admin forms for
+      curriculum items, so that admins could assign tags to each item and
       also add new tags to the Tags table at large, our model strategy was
       revealed to be tricky - while we could get our Tags table set up as a
-      form field, and could add new tags to that table in our database, we
+      form field and could add new tags to that table in our database, we
       found that Django was creating a separate table called tags_tag_lecture
       (for the Lectures) that functioned like our TagItems table and the
-      Many-to-Many relationships within it. After pulling our senior team in
+      Many-To-Many relationships within it. After pulling our senior team in
       to discuss, we realized that Django and SIS were not going to allow us
       to do this feature in the way we had planned it - instead, we pivoted our
-      strategy to use Django's created join tables, leaving all the work we had
-      previously done to properly clean and test our join table behind.`,
+      strategy to use Django's auto-created join tables, leaving the work we had
+      previously done behind.`,
         `Implementing search logic for our tagged items was also quite complicated
-      - this required an understanding of django-watson and how it partnered
+      - this required an understanding of Django-Watson and how it partnered
       with Django's framework and SIS-specific syntax. Pattern matching became
       difficult, since full-text search was standardized across the SIS
       application, and finding the lines of code to add our tag search query
-      took many hours of research, including reading the django-watson source
+      took much research, including reading the Django-Watson source
       code. When we finally cracked it, though, we were able to get search up
       and running quickly, and we felt absolutely elated!`],
       "purpose": [`Our internship with Rithm School's student information
-      system had us immersed in a large codebase written in a  new language
-      (Django), working on scrum team to complete a series of tickets over the
+      system had us immersed in a large codebase written in a new language
+      (Django), working on a scrum team to complete a series of tickets over the
       course of a month. After a couple days of self-directed Django tutorials
       and thoroughly reading docs, we were introduced to the codebase, spent a
-      day researching a specific corner/element of the database and presenting
-      it to our cohort (I researched SIS' Django REST framework and API),
-      analyzed groupings of tickets and played planning poker, and were then
+      day researching a specific corner/element of its design, and presenting
+      it to our cohort (I researched SIS' Django REST framework and API). We then
+      analyzed groupings of tickets and played planning poker, before being
       assigned to our first tickets. We learned the process of ticket evaluation
       and time management, pattern matching for best practices within an
-      existing codebase, writing pull requests, and git management workflows.
-      By the end of the month, each person had completed three tickets of
-      increasing complexity.`,
+      existing codebase, writing successful pull requests, and git management
+      workflows within teams. By the end of the month, each member of the team
+      had completed three tickets of increasing complexity.`,
         `Tickets that I worked on included:`,
         `Adding a view that would allow a user to see all the cohorts/programs
       that they were enrolled in and navigate to those homepages. In this simple
-      sprint, we learned a lot about navigating models and data associations in
-      Django, writing generic class-based views, and writing tests for these
-      views.`,
+      sprint, we learned about navigating models and data tables in Django, writing
+      generic class-based views, and writing comprehensive tests for these views.`,
         `Adding editable tags to curriculum items (lectures, exercises, events,
       assessments, and resources) that were displayed on the item detail
       pages and were searchable using the app’s main search page. This was
@@ -224,13 +225,14 @@ function App() {
       the algorithm would take into account if pairs had worked together on the
       last/most recent sprint, or had worked together frequently throughout
       the bootcamp.`],
-      "lessons": [`Working on an engineering team allowed me to focus intently
-      on clear documentation, thorough testing, pattern matching for best
-      practices within the codebase, collaborating using git branches and
-      writing detailed pull requests, and anticipating time management for
-      each ticket. I learned how to tool quickly, learning a new language and
-      doing deep research both in documentation and in a large codebase, and how
-      to use the knowledge of others and collaborate to solve complex problems.`
+      "lessons": [`Working on a production engineering team allowed me to focus
+      intently on clear documentation and code, thorough testing, pattern
+      matching for best practices within the codebase, collaborating using git
+      branches and writing detailed pull requests, and anticipating time
+      management for each ticket. I learned how to tool quickly, learning a new
+      language by doing deep research both in documentation and in a large
+      codebase, and how to use the knowledge of others and collaborate to solve
+      complex problems.`
       ],
     },
     {
@@ -263,19 +265,18 @@ function App() {
       "github": "https://github.com/karlystark/warbler",
       "demo": "warbler-demo.mp4",
       "bug_stories": "",
-      "purpose": [`Warbler was a three-day sprint opportunity to get into a
-      somewhat-functioning codebase that had numerous bugs, incomplete testing
-      coverage, and missing features, with the intent to orient ourselves
-      within an existing application and build upon it. During this sprint, I
-      had the opportunity to pair program with my cohort-mate Michael
-      Frederickson.`,
+      "purpose": [`Warbler was an opportunity to get into a barely-functioning
+      codebase that had numerous bugs, incomplete testing coverage, and missing
+      features, with the intent to orient ourselves within an existing
+      application and build upon it. During this sprint, I had the opportunity
+      to pair program with my cohort-mate Michael Frederickson.`,
 
         `We built the login/logout and authorization infrastructure on the backend
       using bCrypt for password hashing, middleware to protect the RESTful API
       routes, and Flask's sessions, g object, and local storage to track current
       users. We also protected user and database information from CSRF attacks
-      through WTForm's form validation using CSRF tokens. Associated with
-      building out of security features, we implemented authorization in the
+      through WTForm's form validation using CSRF tokens. Along with
+      building out security features, we implemented authorization in the
       app's profile edit feature, which ensured that a user provided a valid
       password and was logged in in order to edit their profile information.`,
 
@@ -287,7 +288,8 @@ function App() {
       ORM SQLAlchemy.`,
 
         `Finally, we were tasked with ensuring that unit and integration testing
-      for models and routes/view-functions was complete using unittest.`],
+      for models and routes/view-functions maintained 100% converage using
+      unittest.`],
       "lessons": [`We learned the practical differences between storing things
       in the session and the g object, the helpfulness of before_request routes,
       linking CSRF protection across an app, the importance of good join table

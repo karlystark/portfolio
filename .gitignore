@@ -17,9 +17,6 @@
 .env.development.local
 .env.test.local
 .env.production.local
-public/pixly-demo-oct.mp4
-public/sis_tagsearch.mp4
-public/warbler-demo.mp4
 
 npm-debug.log*
 yarn-debug.log*

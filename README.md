@@ -7,7 +7,7 @@ A clean, responsive, accessible portfolio site to showcase my projects, blog, an
 
 This site was built using React and deployed w/ Netlify. 
 
-visit @ http://www.karlystark.com 
+visit @ https://www.karlystark.com 
 
 
 ## Available Scripts

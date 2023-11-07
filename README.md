@@ -1,16 +1,22 @@
 # K.Stark Portfolio Site
 
-A clean, responsive, accessible portfolio site to showcase my projects, blog, and contact links :) 
+A clean, responsive, accessible portfolio site to showcase my projects, blog, and contact links :)
 
 
 <img width="1134" alt="portfoliosite" src="https://github.com/karlystark/portfolio/assets/110060273/b362aecc-0d8c-4be7-9cb7-718a1ccb3af8">
 
-This site was built using React and deployed w/ Netlify. 
+This site was built using React and deployed w/ Netlify.
 
-visit @ https://www.karlystark.com 
+visit @ https://www.karlystark.com
 
 
 ## Available Scripts
+
+If cloning this repo and running from the shell, be sure to run:
+
+### `npm install`
+
+This assures you have all the dependencies needed to run the app.
 
 In the project directory, you can run:
 

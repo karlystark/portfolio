@@ -24,7 +24,6 @@ function Nav() {
         <a className="navbar-contact" href="/contact">contact</a>
       </div>
     </nav>
-
   );
 }
 

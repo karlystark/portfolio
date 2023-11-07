@@ -15,3 +15,17 @@ a:hover{
   text-decoration-line: underline;
 }
 
+.show {
+margin-left: 10px;
+}
+
+
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+@media (max-width: 768px){
+  nav div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+}

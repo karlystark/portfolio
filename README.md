@@ -5,10 +5,11 @@ A clean, responsive, accessible portfolio site to showcase my projects, blog, an
 
 <img width="1134" alt="portfoliosite" src="https://github.com/karlystark/portfolio/assets/110060273/b362aecc-0d8c-4be7-9cb7-718a1ccb3af8">
 
-This site was built using React. 
+This site was built using React and deployed w/ Netlify. 
+
+visit @ https://www.karlystark.com 
 
 
-Note: project demo videos are not currently included in repo due to file size - visit the live site @ http://www.karlystark.com to view.
 ## Available Scripts
 
 In the project directory, you can run:

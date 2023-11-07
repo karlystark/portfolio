@@ -2,8 +2,9 @@
 
 .Projects{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
+  justify-content: center;
   animation: fadeIn 3s forwards;
 }
 
@@ -15,5 +16,16 @@
   }
   to{
     opacity: 1;
+  }
+}
+
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+@media (max-width: 1000px){
+  .Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 3s forwards;
   }
 }

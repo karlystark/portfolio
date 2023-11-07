@@ -16,7 +16,7 @@ import "./Projects.css";
  */
 function Projects({ projects }) {
   return (
-    <div className="Projects row row-cols-1 row-cols-md-3 g-4" role="main">
+    <div className="Projects" role="main">
       {projects.map(project => {
         return (
           <ProjectCard key={project.id} project={project} />

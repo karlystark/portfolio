@@ -45,6 +45,11 @@
   color: #fdfcf0;
 }
 
+.active{
+  background-color: black;
+  color: #fdfcf0;
+}
+
 /************** RESPONSIVE MEDIA QUERIES *****************/
 
 

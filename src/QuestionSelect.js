@@ -37,10 +37,10 @@ function QuestionSelect() {
         ].map((button) => (
           <button
             key={button.id}
-            onClick={() => handleClick(button.id)}
             aria-expanded={button.id === selectedBtn}
             aria-controls={`content-${button.id}`}
-            className="QuestionSelect-btn"
+            className={`QuestionSelect-btn ${selectedBtn === button.id? 'active' : ''}`}
+            onClick={() => handleClick(button.id)}
           >
             <i className={button.emoji}></i>{button.label}
           </button>

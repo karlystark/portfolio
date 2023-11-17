@@ -37,6 +37,7 @@ function QuestionSelect() {
         ].map((button) => (
           <button
             key={button.id}
+            role="tab"
             aria-expanded={button.id === selectedBtn}
             aria-controls={`content-${button.id}`}
             className={`QuestionSelect-btn ${selectedBtn === button.id? 'active' : ''}`}

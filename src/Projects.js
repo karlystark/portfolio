@@ -19,7 +19,7 @@ function Projects({ projects }) {
     <div className="Projects" role="main">
       {projects.map(project => {
         return (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard key={project.id} project={project}/>
         )
       })}
     </div>

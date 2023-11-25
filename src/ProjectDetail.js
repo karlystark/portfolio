@@ -1,5 +1,5 @@
 import "./ProjectDetail.css";
-import React  from "react";
+import React from "react";
 import { useParams } from 'react-router';
 
 /** ProjectDetail renders a detail page for a project.
@@ -15,63 +15,65 @@ import { useParams } from 'react-router';
  * RoutesList => ProjectDetail
  */
 
-function ProjectDetail({ projects }){
+function ProjectDetail({ projects }) {
   const { id } = useParams();
   const project = projects.find(project => project.id === parseInt(id));
 
-  return(
+  return (
     <div className="ProjectDetail" role="main">
       <div className="ProjectDetail-header">
-      <h1>{project.title}</h1>
-      <p>{project.description_long}</p>
-      <div className="ProjectDetail-header-lists">
-      <div className="ProjectDetail-type">
-        <p><b>TYPE</b></p>
-        <p>{project.type}</p>
+        <h1>{project.title}</h1>
+        <p>{project.description_long}</p>
+        <div className="ProjectDetail-header-lists">
+          <div className="ProjectDetail-type">
+            <p><b>TYPE</b></p>
+            <p>{project.type}</p>
+          </div>
+          <div className="ProjectDetail-stack">
+            <p><b>TOOLS</b></p>
+            {project.stack.map(language => <p>{language}</p>)}
+          </div>
+          <div className="ProjectDetail-contributions">
+            <p><b>CONTRIBUTIONS</b></p>
+            {project.role.map(role => <p>{role}</p>)}
+          </div>
+        </div>
       </div>
-      <div className="ProjectDetail-stack">
-        <p><b>TOOLS</b></p>
-        {project.stack.map(language => <p>{language}</p>)}
-      </div>
-      <div className="ProjectDetail-contributions">
-        <p><b>CONTRIBUTIONS</b></p>
-        {project.role.map(role => <p>{role}</p>)}
-      </div>
-      </div>
-      </div>
-      <img src={`/${project.img}`} alt={`${project.title} homepage`} className="ProjectDetail-main-img"/>
-      {project.purpose &&
-      <div className="ProjectDetail-purpose">
-        <h2>Project Purpose and Goal</h2>
-       {project.purpose.map(paragraph => <p>{paragraph}</p>)}
-      </div>}
-      {project.stack_explanation &&
-      <div className="ProjectDetail-stack-detail">
-        <h2>Web Stack and Explanation</h2>
-        {project.stack_explanation.map(paragraph => <p>{paragraph}</p>)}
-      </div>}
+      <img src={`/${project.img}`} alt={`${project.title} homepage`} className="ProjectDetail-main-img" />
+      {project.purpose !== undefined &&
+        <div className="ProjectDetail-purpose">
+          <h2>Project Purpose and Goal</h2>
+          {project.purpose.map(paragraph => <p>{paragraph}</p>)}
+        </div>}
+      {project.stack_explanation !== undefined &&
+        <div className="ProjectDetail-stack-detail">
+          <h2>Web Stack and Explanation</h2>
+          {project.stack_explanation.map(paragraph => <p>{paragraph}</p>)}
+        </div>}
       <div className="ProjectDetail-images">
-        {project.detail_images.map(image => <img src={`/${image[0]}`} alt={image[1]} className="ProjectDetail-img"/>)}
+        {project.detail_images.map(image => <img src={`/${image[0]}`} alt={image[1]} className="ProjectDetail-img" />)}
       </div>
-      {project.bug_stories &&
-      <div className="ProjectDetail-bugs">
-        <h2>Bugs and Thought Process</h2>
-        {project.bug_stories.map(paragraph => <p>{paragraph}</p>)}
-      </div>}
-      <div className="ProjectDetail-demo">
-        <h2>Demo:</h2>
-        <video controls>
-          <source src={`/${project.demo}`} type="video/mp4"/>
+      {project.bug_stories !== undefined &&
+        <div className="ProjectDetail-bugs">
+          <h2>Bugs and Thought Process</h2>
+          {project.bug_stories.map(paragraph => <p>{paragraph}</p>)}
+        </div>}
+      {project.demo !== undefined &&
+        <div className="ProjectDetail-demo">
+          <h2>Demo:</h2>
+          <video controls>
+            <source src={`/${project.demo}`} type="video/mp4" />
           </video>
-      </div>
-      {project.lessons &&
-      <div className="ProjectDetail-lessons">
-        <h2>Lessons Learned</h2>
-        {project.lessons.map(paragraph => <p>{paragraph}</p>)}
-      </div>}
+        </div>
+      }
+      {project.lessons !== undefined &&
+        <div className="ProjectDetail-lessons">
+          <h2>Lessons Learned</h2>
+          {project.lessons.map(paragraph => <p>{paragraph}</p>)}
+        </div>}
     </div>
 
-  )
+  );
 }
 
 export default ProjectDetail;

@@ -19,6 +19,24 @@ function App() {
   const projectData = [
     {
       "id": 1,
+      "title": "Shed",
+      "date" : "2023",
+      "type" : "Personal Project",
+      "role": ["Full-Stack Developer", "UI/UX Design"],
+      "description_short": `a resource-sharing app for chosen family networks.`,
+      "description_long": `Shed is a resource-sharing app for chosen family
+      networks that allows users to easefully list, search, and communicate
+      around shared resources (think: tools, gear, services, food, etc.)`,
+      "stack": ["React", "Node.js", "PostgreSQL", "AWS S3"],
+      "img": "shedhome.png",
+      "detail_images": [],
+      "github": "https://github.com/karlystark/shed-frontend",
+      "purpose": [`Shed is currently-in-production! I'm blogging
+      about my process, if you want to follow along :)
+      Visit my blog by clicking the link in the nav bar.`],
+    },
+    {
+      "id": 2,
       "title": "Pix.ly",
       "date": "2023",
       "type": "Personal Project",
@@ -125,7 +143,7 @@ function App() {
       projects, and I was so glad to have the opportunity to explore solutions.`],
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Rithm School - Student Information System (SIS)",
       "date": "2023",
       "type": "Internship",
@@ -236,7 +254,7 @@ function App() {
       ],
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Warbler",
       "date": "2023",
       "type": "Personal Project",
@@ -264,7 +282,6 @@ function App() {
       follows.`]],
       "github": "https://github.com/karlystark/warbler",
       "demo": "warbler-demo.mp4",
-      "bug_stories": "",
       "purpose": [`Warbler was an opportunity to get into a barely-functioning
       codebase that had numerous bugs, incomplete testing coverage, and missing
       features, with the intent to orient ourselves within an existing

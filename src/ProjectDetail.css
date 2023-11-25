@@ -19,7 +19,7 @@
   max-width: 60%;
   padding: 10px;
   margin: 20px;
-  margin-left: 50px;
+  margin-left: 10%;
 }
 
 .ProjectDetail-header:hover{
@@ -186,6 +186,7 @@
 
 
 @media (min-width: 280px) and (max-width: 320px){
+
   .ProjectDetail-header p {
     font-size: .5em;
   }
@@ -231,6 +232,7 @@
 
 
 @media (min-width: 320px) and (max-width: 768px){
+
   .ProjectDetail-header p {
     font-size: .2em;
   }
@@ -241,6 +243,7 @@
 
   .ProjectDetail-header {
     max-width: 90%;
+    margin-left: 3.5%;
   }
 
   .ProjectDetail-header p:first-of-type {
@@ -258,6 +261,7 @@
 
 
 @media (min-width: 768px) and (max-width: 1024px){
+
   .ProjectDetail-header {
     max-width: 80%;
   }
@@ -276,6 +280,7 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1080px){
+
   .ProjectDetail-header p{
     font-size: 1em;
   }

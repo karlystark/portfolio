@@ -58,29 +58,58 @@
     font-size: .7rem;
   }
   .QuestionSelect-text {
-    font-size: .8rem;
+    font-size: .9rem;
+    max-width: 90%;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 
   .QuestionSelect {
-    max-width: 95%;
+    width: 100%;
+  }
+  .QuestionSelect-buttons{
+    flex-direction: column;
+    width: 100%;
+  }
+  .QuestionSelect{
+    flex-direction: column;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .QuestionSelect-btn{
-    font-size: .8rem;
+    font-size: .85rem;
   }
   .QuestionSelect-text {
-    font-size: .8em;
+    font-size: 1rem;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  .QuestionSelect-buttons{
+    flex-direction: column;
+    width: 100%;
+  }
+  .QuestionSelect{
+    flex-direction: column;
   }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
   .QuestionSelect-btn{
-    font-size: .9rem;
+    font-size: 1rem;
   }
   .QuestionSelect-text {
     font-size: 1rem;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .QuestionSelect-buttons{
+    flex-direction: row;
+  }
+  .QuestionSelect{
+    flex-direction: column;
   }
 }
 

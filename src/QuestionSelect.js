@@ -43,7 +43,8 @@ function QuestionSelect() {
             className={`QuestionSelect-btn ${selectedBtn === button.id ? 'active' : ''}`}
             onClick={() => handleClick(button.id)}
           >
-            <i className={button.emoji}></i>{button.label}
+            <i className={button.emoji}></i>
+            <p>{button.label}</p>
           </button>
         ))}
       </div>

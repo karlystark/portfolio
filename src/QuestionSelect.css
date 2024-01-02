@@ -1,6 +1,6 @@
 /************** QUESTION SELECT *****************/
 
-.QuestionSelect{
+.QuestionSelect {
   display: flex;
   border-radius: 6px;
   margin: 20px;
@@ -9,43 +9,44 @@
   border: 2px solid black;
 }
 
-.QuestionSelect-buttons{
+.QuestionSelect-buttons {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: auto;
+  width: 50%;
 }
 
-.QuestionSelect-btn{
+.QuestionSelect-btn {
   background-color: transparent;
   border: 2px solid black;
   cursor: pointer;
   margin: 5px;
   padding: 10px;
   border-radius: 6px;
-  color:  black;
+  color: black;
 
 }
 
-.QuestionSelect-text{
-  max-width: 50%;
+.QuestionSelect-text {
+  width: 60%;
   margin-left: 20px;
-  font-size: .9em;
+  margin-right: 10px;
+  font-size: 1rem;
   text-align: left;
 }
 
-.QuestionSelect-default{
+.QuestionSelect-default {
   font-size: 2em;
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.QuestionSelect-btn:hover{
+.QuestionSelect-btn:hover {
   background-color: black;
   color: #fdfcf0;
 }
 
-.active{
+.active {
   background-color: black;
   color: #fdfcf0;
 }
@@ -54,12 +55,13 @@
 
 
 @media (min-width: 280px) and (max-width: 320px) {
-  .QuestionSelect-btn{
+  .QuestionSelect-btn {
     font-size: .7rem;
   }
+
   .QuestionSelect-text {
     font-size: .9rem;
-    max-width: 90%;
+    width: 90%;
     margin-left: 10px;
     margin-top: 30px;
   }
@@ -67,53 +69,64 @@
   .QuestionSelect {
     width: 100%;
   }
-  .QuestionSelect-buttons{
+
+  .QuestionSelect-buttons {
     flex-direction: column;
     width: 100%;
   }
-  .QuestionSelect{
+
+  .QuestionSelect {
     flex-direction: column;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .QuestionSelect-btn{
+  .QuestionSelect-btn {
     font-size: .85rem;
+    padding: 9px;
   }
+
   .QuestionSelect-text {
     font-size: 1rem;
-    max-width: 100%;
+    width: 90%;
     margin-left: 10px;
     margin-top: 30px;
   }
-  .QuestionSelect-buttons{
+
+  .QuestionSelect-buttons {
     flex-direction: column;
     width: 100%;
   }
-  .QuestionSelect{
+
+  .QuestionSelect {
     flex-direction: column;
   }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  .QuestionSelect-btn{
+  .QuestionSelect-btn {
     font-size: 1rem;
+    padding: 9px;
   }
+
   .QuestionSelect-text {
     font-size: 1rem;
-    max-width: 100%;
+    width: 90%;
     margin-top: 30px;
     margin-left: 10px;
   }
-  .QuestionSelect-buttons{
+
+  .QuestionSelect-buttons {
     flex-direction: row;
+    width: 100%;
   }
-  .QuestionSelect{
+
+  .QuestionSelect {
     flex-direction: column;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
   .QuestionSelect-btn {
     font-size: 1rem;
   }
@@ -121,5 +134,9 @@
   .QuestionSelect-text {
     font-size: 1rem;
     margin-left: 8%;
+  }
+
+  .QuestionSelect-buttons {
+    width: 50%;
   }
 }

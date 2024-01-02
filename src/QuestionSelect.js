@@ -88,16 +88,17 @@ function QuestionSelect() {
             <p>I love working with:</p>
             <ul>
               <li>React</li>
-              <li>Typescript</li>
-              <li>CSS (and Bootstrap) </li>
-              <li>Express/Node.js</li>
+              <li>Next.js</li>
+              <li>CSS (yes, I do!)</li>
+              <li>Node.js</li>
               <li>Python & Flask</li>
             </ul>
             <p>I'm currently learning:</p>
             <ul>
-              <li>Next.js</li>
-              <li>The ins and outs of web accessibility</li>
-              <li>How to do cool things with multimedia</li>
+              <li>Data Structures and Algorithms</li>
+              <li>ARIA</li>
+              <li>CSS Animations</li>
+              <li>Multimedia Integration</li>
             </ul>
           </div>
         }
@@ -136,7 +137,7 @@ function QuestionSelect() {
               <li>on a hiking trail</li>
               <li>at the climbing gym</li>
               <li>making music</li>
-              <li>working on a little animation/video project</li>
+              <li>working on an animation/video project</li>
               <li>nerding out about Survivor</li>
               <li>whittling spoons</li>
             </ul>

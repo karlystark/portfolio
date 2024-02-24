@@ -93,12 +93,12 @@ function QuestionSelect() {
               <li>Node.js</li>
               <li>Python & Flask</li>
             </ul>
-            <p>I'm currently learning:</p>
+            <p>I'm currently exploring:</p>
             <ul>
-              <li>Data Structures and Algorithms</li>
+              <li>MongoDB & GraphQL</li>
               <li>ARIA</li>
-              <li>CSS Animations</li>
-              <li>Multimedia Integration</li>
+              <li>p5.js</li>
+              <li>D3</li>
             </ul>
           </div>
         }

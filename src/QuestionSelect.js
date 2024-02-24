@@ -88,8 +88,8 @@ function QuestionSelect() {
             <p>I love working with:</p>
             <ul>
               <li>React</li>
-              <li>Next.js</li>
-              <li>CSS (yes, I do!)</li>
+              <li>Next.js/Typescript</li>
+              <li>CSS & Tailwind</li>
               <li>Node.js</li>
               <li>Python & Flask</li>
             </ul>

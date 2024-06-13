@@ -7,6 +7,7 @@
   color: black;
   border: 2px solid black;
   max-width: 70%;
+  overflow: hidden;
   padding: 10px;
   margin: 20px;
   margin-top: 60px;
@@ -36,7 +37,9 @@
 .ProjectCard-img{
   border-radius: 6px;
   max-width: 100%;
-  max-height: 80%;
+  height: 70%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .ProjectCard-info {

@@ -15,12 +15,11 @@ import { Link } from "react-router-dom";
  */
 function ProjectCard({ project }) {
   return (
-    <div className="ProjectCard col">
-      <div className="card h-100 bg-transparent border-transparent">
-      <img src={project.img} alt={`${project.title} homepage`} className="ProjectCard-img card-img-top" />
-      <div className="ProjectCard-info card-body">
-        <h1 className="card-title">{project.title}</h1>
-        <div className="card-text">
+    <div className="ProjectCard">
+      <img src={project.img} alt={`${project.title} homepage`} className="ProjectCard-img" />
+      <div className="ProjectCard-info">
+        <h1 className="ProjectCard-title">{project.title}</h1>
+        <div className="ProjectCard-text">
         <p>{project.date}</p>
         <p>{project.description_short}</p>
         {/* <p>Stack: {project.stack.map(language => `${language}, `)}</p> */}
@@ -31,8 +30,7 @@ function ProjectCard({ project }) {
         </Link>
       </div>
       </div>
-      </div>
-    </div >
+    </div>
   );
 }
 

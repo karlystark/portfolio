@@ -23,10 +23,8 @@
 
 .Contact-links{
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-right: 2%;
   animation: fadeIn 3s forwards;
 }
 
@@ -36,6 +34,10 @@
 
 .Contact i {
   font-size: 3em;
+}
+
+.Contact-linkedin {
+  margin-left: 40px;
 }
 
 
@@ -132,7 +134,7 @@
   }
 
   .Contact-links i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-right: 20px;
   }
 }

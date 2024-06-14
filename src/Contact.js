@@ -17,9 +17,8 @@ function Contact() {
       <div className="Contact-image">
         <h1>let's connect</h1>
         <img src="land.png" alt="abstract line drawing of hills" />
-      </div>
       <div className="Contact-links">
-        <h2>here's my:</h2>
+        {/* <h2>here's my:</h2> */}
         <div className="Contact-github">
         <a href="https://github.com/karlystark" className="mx-2"
           aria-label="visit github" role="button">
@@ -34,13 +33,14 @@ function Contact() {
         </a>
         <p>linkedin</p>
         </div>
-        <div className="Contact-resume">
+        {/* <div className="Contact-resume">
         <a href="resume.pdf" className="mx-2" download
           aria-label="download resume pdf" role="button">
           <i className="bi bi-file-person-fill"></i>
         </a>
         <p>resume</p>
-        </div>
+        </div> */}
+      </div>
       </div>
     </div>
   );

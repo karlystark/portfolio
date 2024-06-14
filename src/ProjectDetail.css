@@ -3,6 +3,7 @@
 .ProjectDetail{
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 40px;
 }
 
@@ -19,7 +20,7 @@
   max-width: 60%;
   padding: 10px;
   margin: 20px;
-  margin-left: 10%;
+
 }
 
 .ProjectDetail-header:hover{
@@ -63,7 +64,7 @@
   max-width: 80%;
   border-radius: 6px;
   align-self: center;
-  margin-top: 50px;
+  margin-top: 5%;
   margin-left: 5%;
   box-shadow: 0 5px 10px rgba(70, 70, 70, 0.3);
 }
@@ -74,7 +75,8 @@
 .ProjectDetail-images {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .ProjectDetail-img {
@@ -82,13 +84,11 @@
   max-width: 60%;
   border-radius: 6px;
   margin: 10px;
-  margin-left: 10%;
   box-shadow: 0 5px 10px rgba(70, 70, 70, 0.3);
 }
 
 .ProjectDetail-img:first-of-type {
   margin-bottom: 40px;
-  margin-left: 30%;
 }
 
 /************** PROJECT DETAIL PURPOSE *****************/
@@ -108,24 +108,24 @@
 
 /************** PROJECT DETAIL LESSONS LEARNED *****************/
 
-.ProjectDetail-lessons {
+/* .ProjectDetail-lessons {
   max-width: 80%;
   text-align: justify;
   align-self: center;
   font-size: 1.2em;
   margin-top: 10%;
-  /* margin-left: 600px; */
+  margin-left: 600px;
   margin-bottom: 100px;
-}
+} */
 
-.ProjectDetail-lessons  p{
+/* .ProjectDetail-lessons  p{
   margin-top: 20px;
-}
+} */
 
 
 /************** PROJECT DETAIL STACK DETAILS *****************/
 
-.ProjectDetail-stack-detail {
+/* .ProjectDetail-stack-detail {
   max-width: 80%;
   text-align: justify;
   font-size: 1.2em;
@@ -135,11 +135,11 @@
 
 .ProjectDetail-stack-detail  p{
   margin-top: 20px;
-}
+} */
 
 /************** PROJECT DETAIL BUG STORIES *****************/
 
-.ProjectDetail-bugs {
+/* .ProjectDetail-bugs {
   max-width: 80%;
   text-align: justify;
   font-size: 1.2em;
@@ -149,25 +149,28 @@
 
 .ProjectDetail-bugs  p{
   margin-top: 20px;
-}
+} */
 
 /************** PROJECT DETAIL VIDEO DEMO *****************/
 
 .ProjectDetail-demo{
   margin-top: 10%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ProjectDetail-demo h2{
-  text-align: left;
-  margin-left: 2%;
-  margin-right: 5%;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .ProjectDetail video {
   max-height: 30%;
   max-width: 60%;
   border-radius: 6px;
+  padding: 20px;
 }
 
 
@@ -210,23 +213,6 @@
   .ProjectDetail-purpose p{
     font-size: .6em;
     max-width: 100%;
-    margin-right: 10px;
-  }
-
-  .ProjectDetail-stack-detail p{
-    font-size: .6em;
-    margin-right: 10px;
-    align-self: center;
-  }
-
-
-  .ProjectDetail-bugs p {
-    font-size: .6em;
-    margin-right: 5px;
-  }
-
-  .ProjectDetail-lessons p {
-    font-size: .6em;
   }
 }
 
@@ -243,7 +229,6 @@
 
   .ProjectDetail-header {
     max-width: 90%;
-    margin-left: 3.5%;
   }
 
   .ProjectDetail-header p:first-of-type {

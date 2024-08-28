@@ -188,7 +188,6 @@ function App() {
       the center line with a victory message`],["orbit3.png", `The game screen
       shows planets unaligned on the center line with a try again message`]],
       "github": "https://github.com/karlystark/orbit-game",
-      "purpose": [``],
       "demo": "orbit-demo.mov"
     },
     {

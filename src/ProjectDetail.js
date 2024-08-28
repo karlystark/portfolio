@@ -39,7 +39,14 @@ function ProjectDetail({ projects }) {
           </div>
         </div>
       </div>
-      <img src={`/${project.img}`} alt={`${project.title} homepage`} className="ProjectDetail-main-img" />
+      {project.demo !== undefined &&
+        <div className="ProjectDetail-demo">
+          <video controls>
+            <source src={`/${project.demo}`} type="video/mp4" />
+          </video>
+        </div>
+      }
+      {project.demo === undefined && <img src={`/${project.img}`} alt={`${project.title} homepage`} className="ProjectDetail-main-img" />}
       {project.purpose !== undefined &&
         <div className="ProjectDetail-purpose">
           <h2>Project Purpose and Goal</h2>
@@ -48,14 +55,6 @@ function ProjectDetail({ projects }) {
       <div className="ProjectDetail-images">
         {project.detail_images.map(image => <img src={`/${image[0]}`} alt={image[1]} className="ProjectDetail-img" />)}
       </div>
-      {project.demo !== undefined &&
-        <div className="ProjectDetail-demo">
-          <video controls>
-            <source src={`/${project.demo}`} type="video/mp4" />
-          </video>
-          <h2>Demo</h2>
-        </div>
-      }
     </div>
 
   );

@@ -56,7 +56,7 @@ function QuestionSelect() {
           selectedBtn === null
           &&
           <div className="QuestionSelect-default">
-            <p>click to find out more :)</p>
+            <p>click to find out more!</p>
           </div>
         }
         {
@@ -87,15 +87,18 @@ function QuestionSelect() {
             aria-hidden={selectedBtn !== 2}>
             <p>I love working with:</p>
             <ul>
+              <li>Next.js & TypeScript</li>
               <li>React</li>
-              <li>Next.js/Typescript</li>
-              <li>CSS & Tailwind</li>
+              <li>CSS & TailwindCSS</li>
               <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>SQL & PostgreSQL</li>
               <li>Python & Flask</li>
             </ul>
             <p>I'm currently exploring:</p>
             <ul>
-              <li>MongoDB & GraphQL</li>
+              <li>GraphQL</li>
+              <li>Rust</li>
               <li>ARIA</li>
               <li>p5.js</li>
               <li>D3</li>

@@ -97,62 +97,6 @@ function App() {
     },
     {
       "id": 4,
-      "title": "Bar Chovy",
-      "date" : "2024",
-      "type" : "Personal Project",
-      "role": ["Developer", "UI/UX Design"],
-      "description_short": `a monthly supper club website with photo gallery and rsvp.`,
-      "description_long": `Bar Chovy is a website for a monthly supper club that
-      allows users to see the monthly menu, view and save photos from each event,
-      and RSVP for future supper club dinners.`,
-      "stack": ["Next.js", "TypeScript", "TailwindCSS", "AWS S3"],
-      "img": "barchovyabout.png",
-      "detail_images": [["barchovygallery.png", "a gallery page shows two images with date and a button to expand"]
-      ,["barchovyrsvp.png", "a rsvp page shows inputs for name, friend's name, and menu item bringing with a button to rsvp"]],
-      "github": "https://github.com/karlystark/bar-chovy",
-      "purpose": [`I've been wanting to start a monthly supper club with my chosen
-      family for a while, since so many of us are missing having regular opportunities
-      to connect with community and share meals and have been busy with our work
-      and lives. I also wanted to practice Next.js' new app router (which I absolutely love),
-      so this was a perfect opportunity to experiment and make a useful, fun site for my community.`],
-      "demo": "barchovy.mp4"
-    },
-    {
-      "id": 5,
-      "title": "Orbit",
-      "date" : "2024",
-      "type" : "Personal Project",
-      "role": ["Developer", "UI/UX Design"],
-      "description_short": `a simple game of timing and touch- set planets into
-      orbit and make sure they align!`,
-      "description_long": `Orbit is a simple and fun game of timing and touch,
-      written in Vanilla Javascript on a Saturday. Players must set two planets
-      into orbit such that they meet on the middle line simultaneously!`,
-      "stack": ["Javascript", "HTML", "CSS"],
-      "img": "orbit1.png",
-      "detail_images": [["orbit2.png", `The game screen show planets aligned on
-      the center line with a victory message`],["orbit3.png", `The game screen
-      shows planets unaligned on the center line with a try again message`]],
-      "github": "https://github.com/karlystark/orbit-game",
-      "purpose": [``],
-      "demo": "orbit-demo.mov"
-    },
-    {
-      "id": 6,
-      "title": "Rat King",
-      "date" : "2024",
-      "type" : "Personal Project",
-      "role": ["Developer", "UI/UX Design"],
-      "description_short": `a choose-your-own-adventure story game`,
-      "description_long": `Rat King is a choose-your-own-adventure story game that is absurd and trash-packed and no matter how you slice it, you're going to wind up indebted to an eternal trash animal who loves taco bell. You'll live forever, though!`,
-      "stack": ["Javascript", "HTML", "CSS"],
-      "img": "ratking.png",
-      "detail_images": [],
-      "github": "rat-king.vercel.app",
-      "demo": "ratkingdemo.mp4"
-    },
-    {
-      "id": 6,
       "title": "Rithm SIS",
       "date": "2023",
       "type": "Internship",
@@ -206,7 +150,63 @@ function App() {
       the bootcamp.`],
     },
     {
+      "id": 5,
+      "title": "Bar Chovy",
+      "date" : "2024",
+      "type" : "Personal Project",
+      "role": ["Developer", "UI/UX Design"],
+      "description_short": `a monthly supper club website with photo gallery and rsvp.`,
+      "description_long": `Bar Chovy is a website for a monthly supper club that
+      allows users to see the monthly menu, view and save photos from each event,
+      and RSVP for future supper club dinners.`,
+      "stack": ["Next.js", "TypeScript", "TailwindCSS", "AWS S3"],
+      "img": "barchovyabout.png",
+      "detail_images": [["barchovygallery.png", "a gallery page shows two images with date and a button to expand"]
+      ,["barchovyrsvp.png", "a rsvp page shows inputs for name, friend's name, and menu item bringing with a button to rsvp"]],
+      "github": "https://github.com/karlystark/bar-chovy",
+      "purpose": [`I've been wanting to start a monthly supper club with my chosen
+      family for a while, since so many of us are missing having regular opportunities
+      to connect with community and share meals and have been busy with our work
+      and lives. I also wanted to practice Next.js' new app router (which I absolutely love),
+      so this was a perfect opportunity to experiment and make a useful, fun site for my community.`],
+      "demo": "barchovy.mp4"
+    },
+    {
+      "id": 6,
+      "title": "Orbit",
+      "date" : "2024",
+      "type" : "Personal Project",
+      "role": ["Developer", "UI/UX Design"],
+      "description_short": `a simple game of timing and touch- set planets into
+      orbit and make sure they align!`,
+      "description_long": `Orbit is a simple and fun game of timing and touch,
+      written in Vanilla Javascript on a Saturday. Players must set two planets
+      into orbit such that they meet on the middle line simultaneously!`,
+      "stack": ["Javascript", "HTML", "CSS"],
+      "img": "orbit1.png",
+      "detail_images": [["orbit2.png", `The game screen show planets aligned on
+      the center line with a victory message`],["orbit3.png", `The game screen
+      shows planets unaligned on the center line with a try again message`]],
+      "github": "https://github.com/karlystark/orbit-game",
+      "purpose": [``],
+      "demo": "orbit-demo.mov"
+    },
+    {
       "id": 7,
+      "title": "Rat King",
+      "date" : "2024",
+      "type" : "Personal Project",
+      "role": ["Developer", "UI/UX Design"],
+      "description_short": `a choose-your-own-adventure story game`,
+      "description_long": `Rat King is a choose-your-own-adventure story game that is absurd and trash-packed and no matter how you slice it, you're going to wind up indebted to an eternal trash animal who loves taco bell. You'll live forever, though!`,
+      "stack": ["Javascript", "HTML", "CSS"],
+      "img": "ratking.png",
+      "detail_images": [],
+      "github": "rat-king.vercel.app",
+      "demo": "ratkingdemo.mp4"
+    },
+    {
+      "id": 8,
       "title": "Warbler",
       "date": "2023",
       "type": "Personal Project",

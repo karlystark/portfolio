@@ -22,7 +22,6 @@ function ProjectCard({ project }) {
         <div className="ProjectCard-text">
         <p>{project.date}</p>
         <p>{project.description_short}</p>
-        {/* <p>Stack: {project.stack.map(language => `${language}, `)}</p> */}
         <Link to={`/projects/${project.id}`} className="ProjectCard-link">
           <button>
             {project.title} details

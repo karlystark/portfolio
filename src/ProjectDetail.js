@@ -48,11 +48,6 @@ function ProjectDetail({ projects }) {
       <div className="ProjectDetail-images">
         {project.detail_images.map(image => <img src={`/${image[0]}`} alt={image[1]} className="ProjectDetail-img" />)}
       </div>
-      {/* {project.bug_stories !== undefined &&
-        <div className="ProjectDetail-bugs">
-          <h2>Bugs and Thought Process</h2>
-          {project.bug_stories.map(paragraph => <p>{paragraph}</p>)}
-        </div>} */}
       {project.demo !== undefined &&
         <div className="ProjectDetail-demo">
           <video controls>
@@ -61,11 +56,6 @@ function ProjectDetail({ projects }) {
           <h2>Demo</h2>
         </div>
       }
-      {/* {project.lessons !== undefined &&
-        <div className="ProjectDetail-lessons">
-          <h2>Lessons Learned</h2>
-          {project.lessons.map(paragraph => <p>{paragraph}</p>)}
-        </div>} */}
     </div>
 
   );

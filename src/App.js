@@ -20,7 +20,7 @@ function App() {
     {
       "id": 1,
       "title": "Shed",
-      "date" : "2023",
+      "date" : "work in progress",
       "type" : "Personal Project",
       "role": ["Full-Stack Developer", "UI/UX Design"],
       "description_short": `a resource-sharing app for chosen family networks.`,
@@ -31,18 +31,28 @@ function App() {
       "img": "shedhome.png",
       "detail_images": [],
       "github": "https://github.com/karlystark/shed-frontend",
-      "purpose": [`Shed is currently-in-production! I'm blogging
-      about my process, if you want to follow along :)
-      Visit my blog by clicking the link in the nav bar.`],
     },
     {
       "id": 2,
+      "title": "WAMF?",
+      "date" : "2024",
+      "type" : "Personal Project",
+      "role": ["Full-Stack Developer", "UI/UX Design"],
+      "description_short": `a vacation-logging app that answers the eternal question - which friends are in town today?`,
+      "description_long": `A full-stack application that I built for a friend, which allows users to add friends and store their vacation plans. On any given day, when a user visits the app, friend cards will display where that friend is located. Who's in town to hang out today?`,
+      "stack": ["React", "Node.js", "MongoDB"],
+      "img": "wamf.png",
+      "detail_images": [],
+      "github": "https://github.com/karlystark/find-friends-frontend",
+      "demo": "wherearemyfriends.mp4"
+    },
+    {
+      "id": 3,
       "title": "Pix.ly",
       "date": "2023",
       "type": "Personal Project",
       "role": ["Full-Stack Developer", "UI/UX Design"],
-      "description_short": `a photo gallery app that teaches you how to
-      write alt-text`,
+      "description_short": `an accessible photo gallery app with custom alt-text`,
       "description_long": `Pix.ly is a photo gallery app that allows users to
       upload photos to their pix.ly board, view metadata (including the camera
       used and location), contribute custom alt-text for their photos (and
@@ -50,28 +60,6 @@ function App() {
       implementations will include search functionality, focusing on exif
       data search.`,
       "stack": ["React", "Python", "Flask", "PostgreSQL", "AWS S3"],
-      "stack_explanation": [`Creating a full-stack application from the ground
-      up required us to perform well-thought-out design practices and mindfully
-      choose which languages and frameworks we were going to use on the front
-      and backends.`,
-        `We chose to build our backend using Python's Flask framework due to its
-      quick startup time and breadth of library support for exif data
-      extraction, PostgreSQL for our database, and AWS S3 to store our image
-      files (with boto3 used on the backend to send the images we received from
-      our frontend upload form to S3). To extract and process exif data, we used a
-      combination of libraries - Exif, Pillow, and geoPy's geolocator
-      library. Exif and geoPy worked together to translate
-      longitudinal/latitudinal values from the image exif (if available)
-      and locate the city and country where the image was taken. Pillow was
-      used to extract all other exif data values.`,
-        `On the frontend, we built a single-page application using React and React
-      router. CSS and Bootstrap worked together to create the styling for the
-      UI. Inspired by my favorite image site, Unsplash, I created a three
-      column layout for our images and full-screen image detail modals
-      on-click. On the image upload form, I created a field for users to
-      include custom alt-text for their images, and an expandable info-card that
-      users could click to learn more about how to write effective, meaningful
-      alt-text.`],
       "img": "pixly_home.png",
       "detail_images": [["pixly_form.png", `pix.ly's file upload form shows a
       custom alt-text field`],
@@ -79,25 +67,6 @@ function App() {
       alt-text with an example`]],
       "github": "https://github.com/karlystark/pixly-frontend",
       "demo": "pixly-demo-oct.mp4",
-      "bug_stories": [`Setting up and connecting AWS for the first time was a
-      learning curve, and took us the better part of our first day to work
-      through, but once we got that out of the way, the rest of our project was
-      a series of incredibly fun problems we got to solve.`,
-        `One of our best was in pulling and formatting location data from our
-      images — for this, we used a combination of the exif library (to pull
-      the longitude and latitude data from the image) and geoPy’s geolocator
-      library to translate latitude/longitudes (in decimal degrees) into city
-      and country strings. Translating our data between tuple and decimal
-      degree form was a great puzzle, and in the end we were able to add a
-      really nicely formatted string into our metadata database for any photo
-      that contained GPS values.`,
-        `On the front-end, we discovered the complications with using
-      React/Flask as your stack of choice, namely in how CORS and passing
-      data between the two works. We were getting many errors for our basic
-      GET API requests, when we had already imported and initialized
-      flask_cors, until we figured out that we needed to add an
-      Access-Control-Allow-Origin header with the value of "*" to all GET API
-      call responses on the backend.`],
       "purpose": [`Pix.ly is a full-stack application built in a week from
       scratch, and presented an opportunity to learn project management,
       prioritizing key tasks under a tight deadline, and systems design.
@@ -125,26 +94,66 @@ function App() {
       make/model used. My other goal is to make the app fully responsive, as
       well as incorporate lazy loading and image compression to allow for more
       performant image loading in the gallery.`],
-      "lessons": [`Getting my hands on image data and working on a media-heavy
-      product allowed me to really lean on my previous career experience as a
-      filmmaker/photographer and media digitization specialist. Much of the
-      problem solving around handling and accessing exif data was ameliorated
-      by the fact that I had a strong background in creating and handling
-      images, and also brought new considerations to my attention:`,
-        `The accessibility issues in an app of this type, most acutely a lack of
-      meaningful alt-text, allowed me to plumb my media accessibility workshops
-      and lesson plans to decide a concise, simple, and approachable way to empower
-      users to write and think mindfully about their images' alt-text.`,
-        `Working with a large gallery of photos meant performance and loading
-      issues, until I realized that the images needed to be compressed upon
-      storage in AWS S3, and lazy loading could be utilized to decrease load
-      times on scroll. When dealing with a media-heavy application, these
-      issues became much more apparent to me than they have in previous
-      projects, and I was so glad to have the opportunity to explore solutions.`],
     },
     {
-      "id": 3,
-      "title": "Rithm School - Student Information System (SIS)",
+      "id": 4,
+      "title": "Bar Chovy",
+      "date" : "2024",
+      "type" : "Personal Project",
+      "role": ["Developer", "UI/UX Design"],
+      "description_short": `a monthly supper club website with photo gallery and rsvp.`,
+      "description_long": `Bar Chovy is a website for a monthly supper club that
+      allows users to see the monthly menu, view and save photos from each event,
+      and RSVP for future supper club dinners.`,
+      "stack": ["Next.js", "TypeScript", "TailwindCSS", "AWS S3"],
+      "img": "barchovyabout.png",
+      "detail_images": [["barchovygallery.png", "a gallery page shows two images with date and a button to expand"]
+      ,["barchovyrsvp.png", "a rsvp page shows inputs for name, friend's name, and menu item bringing with a button to rsvp"]],
+      "github": "https://github.com/karlystark/bar-chovy",
+      "purpose": [`I've been wanting to start a monthly supper club with my chosen
+      family for a while, since so many of us are missing having regular opportunities
+      to connect with community and share meals and have been busy with our work
+      and lives. I also wanted to practice Next.js' new app router (which I absolutely love),
+      so this was a perfect opportunity to experiment and make a useful, fun site for my community.`],
+      "demo": "barchovy.mp4"
+    },
+    {
+      "id": 5,
+      "title": "Orbit",
+      "date" : "2024",
+      "type" : "Personal Project",
+      "role": ["Developer", "UI/UX Design"],
+      "description_short": `a simple game of timing and touch- set planets into
+      orbit and make sure they align!`,
+      "description_long": `Orbit is a simple and fun game of timing and touch,
+      written in Vanilla Javascript on a Saturday. Players must set two planets
+      into orbit such that they meet on the middle line simultaneously!`,
+      "stack": ["Javascript", "HTML", "CSS"],
+      "img": "orbit1.png",
+      "detail_images": [["orbit2.png", `The game screen show planets aligned on
+      the center line with a victory message`],["orbit3.png", `The game screen
+      shows planets unaligned on the center line with a try again message`]],
+      "github": "https://github.com/karlystark/orbit-game",
+      "purpose": [``],
+      "demo": "orbit-demo.mov"
+    },
+    {
+      "id": 6,
+      "title": "Rat King",
+      "date" : "2024",
+      "type" : "Personal Project",
+      "role": ["Developer", "UI/UX Design"],
+      "description_short": `a choose-your-own-adventure story game`,
+      "description_long": `Rat King is a choose-your-own-adventure story game that is absurd and trash-packed and no matter how you slice it, you're going to wind up indebted to an eternal trash animal who loves taco bell. You'll live forever, though!`,
+      "stack": ["Javascript", "HTML", "CSS"],
+      "img": "ratking.png",
+      "detail_images": [],
+      "github": "rat-king.vercel.app",
+      "demo": "ratkingdemo.mp4"
+    },
+    {
+      "id": 6,
+      "title": "Student Information System (SIS)",
       "date": "2023",
       "type": "Internship",
       "role": ["Tags Feature", "Pair Programming System"],
@@ -154,12 +163,6 @@ function App() {
       working in a live codebase of 80,000+ lines of code, in an agile team
       workflow, and maintaining 100% test coverage.`,
       "stack": ["Python", "Django", "unittest"],
-      "stack_explanation": [`SIS was built using Django and Django REST
-      Framework, with extensive administrative infrastructure and Django
-      templates for the frontend. Tools that we used throughout our time in
-      the SIS codebase were Django Watson for full-text search and python matching
-      library for stable roommate pairings. All tests were written using
-      unittest.`],
       "img": "sis_home.png",
       "detail_images": [["sis_tagsearch.png", `search results for
       object-oriented programming show numerous resources`],
@@ -167,48 +170,6 @@ function App() {
       to move each name up or down the list.`]],
       "github": "",
       "demo": "sis_tagsearch.mp4",
-      "bug_stories": [`Building a tagging feature from scratch in an abstracted
-      system such as Django yielded so many interesting bugs and epiphanies. As
-      we were experiencing the quirks of Django for the first time, and had
-      our hands in many apps and parts of the codebase to implement this
-      site-wide feature, we discovered that building a tag-feature was going to
-      require much flexibility and resilience.`,
-        `Once we made the decision to strike out on our own without using a
-      tagging library, we began building out our models and writing unit tests
-      to maintain full coverage of our work. In this first iteration, we
-      discovered how complicated Django’s models could become, researching
-      different strategies for our TagItems table, which could connect any of
-      five different resources with a tag (but never more than one at a time!).
-      Generic foreign key seemed like a good choice at first, but then we
-      discovered that querying would get very complicated using this method.
-      After some feedback, we went with a table that used Many-To-Many
-      relationships to connect foreign key curriculum items to the table,
-      along with some very fun unique constraints and clean methods to make
-      sure that each curriculum item couldn’t have duplicate tags, and no
-      tag instance could have multiple curriculum items attached (ex. “React”
-      couldn’t show up twice on a given lecture, and a single row/tag
-      instance in our table couldn’t have both a lecture resource and assessment
-      resource attached to it).`,
-        `When we began to implement a "tags" field in the admin forms for
-      curriculum items, so that admins could assign tags to each item and
-      also add new tags to the Tags table at large, our model strategy was
-      revealed to be tricky - while we could get our Tags table set up as a
-      form field and could add new tags to that table in our database, we
-      found that Django was creating a separate table called tags_tag_lecture
-      (for the Lectures) that functioned like our TagItems table and the
-      Many-To-Many relationships within it. After pulling our senior team in
-      to discuss, we realized that Django and SIS were not going to allow us
-      to do this feature in the way we had planned it - instead, we pivoted our
-      strategy to use Django's auto-created join tables, leaving the work we had
-      previously done behind.`,
-        `Implementing search logic for our tagged items was also quite complicated
-      - this required an understanding of Django-Watson and how it partnered
-      with Django's framework and SIS-specific syntax. Pattern matching became
-      difficult, since full-text search was standardized across the SIS
-      application, and finding the lines of code to add our tag search query
-      took much research, including reading the Django-Watson source
-      code. When we finally cracked it, though, we were able to get search up
-      and running quickly, and we felt absolutely elated!`],
       "purpose": [`Our internship with Rithm School's student information
       system had us immersed in a large codebase written in a new language
       (Django), working on a scrum team to complete a series of tickets over the
@@ -243,18 +204,9 @@ function App() {
       the algorithm would take into account if pairs had worked together on the
       last/most recent sprint, or had worked together frequently throughout
       the bootcamp.`],
-      "lessons": [`Working on a production engineering team allowed me to focus
-      intently on clear documentation and code, thorough testing, pattern
-      matching for best practices within the codebase, collaborating using git
-      branches and writing detailed pull requests, and anticipating time
-      management for each ticket. I learned how to tool quickly, learning a new
-      language by doing deep research both in documentation and in a large
-      codebase, and how to use the knowledge of others and collaborate to solve
-      complex problems.`
-      ],
     },
     {
-      "id": 4,
+      "id": 7,
       "title": "Warbler",
       "date": "2023",
       "type": "Personal Project",
@@ -267,14 +219,6 @@ function App() {
       coverage.`,
       "stack": ["Python", "Flask", "PostgreSQL", "SQLAlchemy", "Jinja", "Bcrypt",
         "unittest"],
-      "stack_explanation": [`Warbler was built using Python/Flask on the
-      backend, PostgreSQL and SQLAlchemy for database management, Jinja for
-      HTML templating, and WTForms for all form validation. Flask provided
-      quick and RESTful API routing, helpful auth tools such as g object and
-      before_request middleware, and great support for our complex database
-      structure. SQLAlchemy was an excellent ORM choice to handle and query the
-      many-to-many relationships amongst our tables for such things as
-      followers/followed.`],
       "img": "warbler_home.png",
       "detail_images": [["warbler_profile.png", `a warbler profile page shows
       text posts, profile photos, and banner.`],
@@ -307,13 +251,6 @@ function App() {
         `Finally, we were tasked with ensuring that unit and integration testing
       for models and routes/view-functions maintained 100% converage using
       unittest.`],
-      "lessons": [`We learned the practical differences between storing things
-      in the session and the g object, the helpfulness of before_request routes,
-      linking CSRF protection across an app, the importance of good join table
-       naming, SQLAlchemy’s relationship alchemy, raising authorization errors,
-       and so many good testing practices. On an app of this scale, we got to
-       organize and navigate models and forms and databases and routes and
-       tests and stylesheets, and it was exhilarating.`],
     }
   ];
 

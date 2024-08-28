@@ -22,7 +22,7 @@ function About() {
         </div>
         <p>(they/them)</p>
         <p>
-          As a trained full-stack engineer who loves user-focused,
+          As a full-stack engineer who loves user-focused,
           accessible design, I am drawn to projects that allow me to utilize
           my creative background towards solutions that prioritize clean,
           well-documented, well-tested code.

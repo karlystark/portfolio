@@ -1,5 +1,5 @@
 import "./ProjectCard.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 /** ProjectCard renders a project overview card with a button that links to a
  * project detail page.
@@ -14,6 +14,13 @@ import { Link } from "react-router-dom";
  * Projects => ProjectCard => ProjectDetail
  */
 function ProjectCard({ project }) {
+  const navigate = useNavigate();
+
+  const handleClick = (link) =>  () => {
+    navigate(link);
+    window.scrollTo(0,0);
+  }
+
   return (
     <div className="ProjectCard">
       <img src={project.img} alt={`${project.title} homepage`} className="ProjectCard-img" />
@@ -22,11 +29,9 @@ function ProjectCard({ project }) {
         <div className="ProjectCard-text">
         <p>{project.date}</p>
         <p>{project.description_short}</p>
-        <Link to={`/projects/${project.id}`} className="ProjectCard-link">
-          <button>
+          <button onClick={handleClick(`/projects/${project.id}`)} className="ProjectCard-link">
             {project.title} details
           </button>
-        </Link>
       </div>
       </div>
     </div>

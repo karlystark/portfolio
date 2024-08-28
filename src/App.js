@@ -153,7 +153,7 @@ function App() {
     },
     {
       "id": 6,
-      "title": "Student Information System (SIS)",
+      "title": "Rithm SIS",
       "date": "2023",
       "type": "Internship",
       "role": ["Tags Feature", "Pair Programming System"],

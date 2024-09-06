@@ -28,7 +28,7 @@ function App() {
       networks that allows users to easefully list, search, and communicate
       around shared resources (think: tools, gear, services, food, etc.)`,
       "stack": ["React", "Node.js", "PostgreSQL", "AWS S3"],
-      "img": "shedhome.png",
+      "img": "shed-home.png",
       "detail_images": [],
       "github": "https://github.com/karlystark/shed-frontend",
     },

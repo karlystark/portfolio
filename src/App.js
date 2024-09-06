@@ -151,6 +151,20 @@ function App() {
     },
     {
       "id": 5,
+      "title": "pixel feed",
+      "date" : "2024",
+      "type" : "Personal Project",
+      "role": ["Developer", "UI/UX Design"],
+      "description_short": `a low-fi, pixelated, grayscale webcam feed with recording capabilities.`,
+      "description_long": `pixel feed renders a low-fi, grayscale, pixelated rendering of your webcam feed and allows users to record and download video.`,
+      "stack": ["Javascript", "HTML", "CSS"],
+      "img": "pixelfeed2.png",
+      "detail_images": [],
+      "github": "https://github.com/karlystark/pixel-feed",
+      "demo": "pixel-feed.mp4"
+    },
+    {
+      "id": 6,
       "title": "Bar Chovy",
       "date" : "2024",
       "type" : "Personal Project",
@@ -172,7 +186,7 @@ function App() {
       "demo": "barchovy.mp4"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Orbit",
       "date" : "2024",
       "type" : "Personal Project",
@@ -191,7 +205,7 @@ function App() {
       "demo": "orbit-demo.mov"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Rat King",
       "date" : "2024",
       "type" : "Personal Project",
@@ -205,7 +219,7 @@ function App() {
       "demo": "ratkingdemo.mp4"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Warbler",
       "date": "2023",
       "type": "Personal Project",

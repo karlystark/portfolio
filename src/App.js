@@ -29,7 +29,7 @@ function App() {
       around shared resources (think: tools, gear, services, food, etc.)`,
       "stack": ["React", "Node.js", "PostgreSQL", "AWS S3"],
       "img": "shed-home.png",
-      "detail_images": [],
+      "detail_images": [["shed-about.png", "about page reads 'shed is a resource sharing app for chosen family networks'"]],
       "github": "https://github.com/karlystark/shed-frontend",
     },
     {

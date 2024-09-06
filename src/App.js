@@ -20,8 +20,8 @@ function App() {
     {
       "id": 1,
       "title": "Shed",
-      "date" : "work in progress",
-      "type" : "Personal Project",
+      "date": "work in progress",
+      "type": "Personal Project",
       "role": ["Full-Stack Developer", "UI/UX Design"],
       "description_short": `a resource-sharing app for chosen family networks.`,
       "description_long": `Shed is a resource-sharing app for chosen family
@@ -29,14 +29,16 @@ function App() {
       around shared resources (think: tools, gear, services, food, etc.)`,
       "stack": ["Next.js", "TypeScript", "MongoDB", "TailwindCSS"],
       "img": "shed-home.png",
-      "detail_images": [["shed-about.png", "about page reads 'shed is a resource sharing app for chosen family networks'"], ["shed-filter.png", "resources page shows different resource cards and a filter bar."]],
+      "detail_images": [["shed-about.png", "about page reads 'shed is a resource sharing app for chosen family networks'"],
+      ["shed-filter.png", "resources page shows different resource cards and a filter bar."],
+      ["shed-signup.png", "signup page shows inputs for email, username, and password with profile color and image selection."]],
       "github": "https://github.com/karlystark/shed-frontend",
     },
     {
       "id": 2,
       "title": "WAMF?",
-      "date" : "2024",
-      "type" : "Personal Project",
+      "date": "2024",
+      "type": "Personal Project",
       "role": ["Full-Stack Developer", "UI/UX Design"],
       "description_short": `a vacation-logging app that answers the eternal question - which friends are in town today?`,
       "description_long": `A full-stack application that I built for a friend, which allows users to add friends and store their vacation plans. On any given day, when a user visits the app, friend cards will display where that friend is located. Who's in town to hang out today?`,
@@ -152,8 +154,8 @@ function App() {
     {
       "id": 5,
       "title": "pixel feed",
-      "date" : "2024",
-      "type" : "Personal Project",
+      "date": "2024",
+      "type": "Personal Project",
       "role": ["Developer", "UI/UX Design"],
       "description_short": `a low-fi, pixelated, grayscale webcam feed with recording capabilities.`,
       "description_long": `pixel feed renders a low-fi, grayscale, pixelated rendering of your webcam feed and allows users to record and download video.`,
@@ -166,8 +168,8 @@ function App() {
     {
       "id": 6,
       "title": "Bar Chovy",
-      "date" : "2024",
-      "type" : "Personal Project",
+      "date": "2024",
+      "type": "Personal Project",
       "role": ["Developer", "UI/UX Design"],
       "description_short": `a monthly supper club website with photo gallery and rsvp.`,
       "description_long": `Bar Chovy is a website for a monthly supper club that
@@ -176,7 +178,7 @@ function App() {
       "stack": ["Next.js", "TypeScript", "TailwindCSS", "AWS S3"],
       "img": "barchovyabout.png",
       "detail_images": [["barchovygallery.png", "a gallery page shows two images with date and a button to expand"]
-      ,["barchovyrsvp.png", "a rsvp page shows inputs for name, friend's name, and menu item bringing with a button to rsvp"]],
+        , ["barchovyrsvp.png", "a rsvp page shows inputs for name, friend's name, and menu item bringing with a button to rsvp"]],
       "github": "https://github.com/karlystark/bar-chovy",
       "purpose": [`I've been wanting to start a monthly supper club with my chosen
       family for a while, since so many of us are missing having regular opportunities
@@ -188,8 +190,8 @@ function App() {
     {
       "id": 7,
       "title": "Orbit",
-      "date" : "2024",
-      "type" : "Personal Project",
+      "date": "2024",
+      "type": "Personal Project",
       "role": ["Developer", "UI/UX Design"],
       "description_short": `a simple game of timing and touch- set planets into
       orbit and make sure they align!`,
@@ -199,7 +201,7 @@ function App() {
       "stack": ["Javascript", "HTML", "CSS"],
       "img": "orbit1.png",
       "detail_images": [["orbit2.png", `The game screen show planets aligned on
-      the center line with a victory message`],["orbit3.png", `The game screen
+      the center line with a victory message`], ["orbit3.png", `The game screen
       shows planets unaligned on the center line with a try again message`]],
       "github": "https://github.com/karlystark/orbit-game",
       "demo": "orbit-demo.mov"
@@ -207,8 +209,8 @@ function App() {
     {
       "id": 8,
       "title": "Rat King",
-      "date" : "2024",
-      "type" : "Personal Project",
+      "date": "2024",
+      "type": "Personal Project",
       "role": ["Developer", "UI/UX Design"],
       "description_short": `a choose-your-own-adventure story game`,
       "description_long": `Rat King is a choose-your-own-adventure story game that is absurd and trash-packed and no matter how you slice it, you're going to wind up indebted to an eternal trash animal who loves taco bell. You'll live forever, though!`,
@@ -272,7 +274,7 @@ function App() {
       <BrowserRouter>
         <Nav />
         <RoutesList projects={projectData} />
-          {/* <Footer /> */}
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

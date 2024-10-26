@@ -207,20 +207,6 @@ function App() {
       "demo": "orbit-demo.mov"
     },
     {
-      "id": 8,
-      "title": "Rat King",
-      "date": "2024",
-      "type": "Personal Project",
-      "role": ["Developer", "UI/UX Design"],
-      "description_short": `a choose-your-own-adventure story game`,
-      "description_long": `Rat King is a choose-your-own-adventure story game that is absurd and trash-packed and no matter how you slice it, you're going to wind up indebted to an eternal trash animal who loves taco bell. You'll live forever, though!`,
-      "stack": ["Javascript", "HTML", "CSS"],
-      "img": "ratking.png",
-      "detail_images": [],
-      "github": "rat-king.vercel.app",
-      "demo": "ratkingdemo.mp4"
-    },
-    {
       "id": 9,
       "title": "Warbler",
       "date": "2023",

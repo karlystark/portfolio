@@ -72,7 +72,7 @@ function QuestionSelect() {
             <p> Beyond my passion-driven work ethic, I prioritize connections
               with others - I love to know how people work best, what their
               communication styles are, and what they need to feel empowered.</p>
-            <p>As someone who has taught media technologies to middle, high
+            <p>As a lifelong educator who has had the opportunity to teach middle, high
               school, and adult students, I absolutely love learning from and
               with others, and I'm particularly skilled at mentorship and
               breaking down complex topics for those with different levels of
@@ -97,11 +97,10 @@ function QuestionSelect() {
             </ul>
             <p>I'm currently exploring:</p>
             <ul>
-              <li>GraphQL</li>
+              <li>Framer Motion</li>
+              <li>DevOps</li>
               <li>Rust</li>
               <li>ARIA</li>
-              <li>p5.js</li>
-              <li>D3</li>
             </ul>
           </div>
         }

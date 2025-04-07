@@ -22,7 +22,7 @@ function About() {
         </div>
         <p>(they/them)</p>
         <p>
-        I'm a full-stack software engineer with a passion for accessibility and
+        I'm an educator & full-stack software engineer with a passion for accessibility and
         making things that bring people closer to their communities. I currently
         spend my days teaching full-stack web development (MERN stack) and building
         projects with folks at <a href="https://thelastmile.org/">The Last Mile</a>.
